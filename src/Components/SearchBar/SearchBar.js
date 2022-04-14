@@ -1,6 +1,7 @@
 import React from 'react';
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
-import './SearchBar.css';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -25,8 +26,16 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="SearchBar">
-        <input placeholder="Enter A Song, Album, or Artist" onChange={this.handleTermChange} />
-        <button onClick={this.search}>SEARCH</button>
+        <TextField sx={{
+          height: 100,
+        }}
+          id="outlined-basic"
+          label="Enter A Song, Album, or Artist"
+          variant="outlined"
+          type="text"
+          onChange={this.handleTermChange} />
+        <br/>
+        <Button type="submit" variant="contained" onClick={this.search}>SEARCH</Button>
       </div>
     );
   }

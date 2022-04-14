@@ -63,6 +63,7 @@ class App extends React.Component {
         <h1>Create<span className="highlight"> New</span> Playlist in Spotify</h1>
         <div className="App">
           <SearchBar onSearch={this.search} />
+          <br/>
           <div className="App-playlist">
             <SearchResults searchResults={this.state.searchResults} onAdd={this.addTrack} />
             <br/>
