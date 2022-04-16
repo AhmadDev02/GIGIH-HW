@@ -82,5 +82,3 @@ export default App;
 
 
 
-// WEBPACK FOOTER //
-// ./src/components/App/App.js
